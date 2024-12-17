@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.custom-shadow {
+		box-shadow: 0px 0px 4px 0px #00000040;
+	}
+
+	.white-container {
+		@apply rounded-[10px] bg-white px-12 py-14;
+	}
+}
